@@ -14,7 +14,7 @@ urlpatterns = [
     path('<str:pk>/pay/', views.updateOrderToPaid, name='pay'),
     
 
-    # path('<str:pk>/deliver/', views.updateOrderToDelivered, name='order-delivered'),
+    path('<str:pk>/deliver/', views.updateOrderToDelivered, name='order-delivered'),
 
     
     

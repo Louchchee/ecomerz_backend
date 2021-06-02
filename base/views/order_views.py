@@ -63,7 +63,7 @@ def addOrderItems(request):
     serializer = OrderSerializer(order, many=False)
     return Response(serializer.data)
 
-
+#gor customer
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def getMyOrders(request):
@@ -73,7 +73,7 @@ def getMyOrders(request):
     return Response(serializer.data)
 
 
-
+#for admin
 @api_view(['GET'])
 @permission_classes([IsAdminUser])
 def getOrders(request):
